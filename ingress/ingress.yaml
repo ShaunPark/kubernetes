@@ -10,9 +10,7 @@ spec:
       paths:
       - path: /foos1
         backend:
-          serviceName: s1
-          servicePort: 80
-      - path: /bars2
-        backend:
-          serviceName: s2
-          servicePort: 80
+          service:
+            name: s1
+            port:
+              number: 80
